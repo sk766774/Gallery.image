@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>My photo gallery</h1>
+
+    
+        <nav class="filter-nav">
+            <button class="btn active" data-filter="all"></button>
+            <button class="btn" data-filter="nature">(Nature)</button>
+            <button class="btn" data-filter="tech"> (Tech)</button>
+            <button class="btn" data-filter="travel"> (Travel)</button>
+        </nav>
+
+        <div class="gallery">
+            <!-- Nature Items -->
+            <div class="gallery-item nature">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9CNx5YrKjmk0sTC07w26JSW14tJsGmomdtNJOhnQY0A&s=10" alt="Nature 1">
+                <div class="overlay">Nature 1</div>
+            </div>
+            <div class="gallery-item nature">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/049/855/347/small/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg" alt="Nature 2">
+                <div class="overlay">Nature 2</div>
+            </div>
+
+            <!-- Tech Items -->
+            <div class="gallery-item tech">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZB3js9s1bbAnXujO3utpTlkAK_VQ7k_UXypl1pHvDzQ&s=10" alt="Tech 1">
+                <div class="overlay">Tech 1</div>
+            </div>
+            <div class="gallery-item tech">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvTcjdLjdR8fetHlaqA2sLPqj6dcjz48Q6X238szBDSA&s=10" alt="Tech 2">
+                <div class="overlay">Tech 2</div>
+            </div>
+
+            <!-- Travel Items -->
+            <div class="gallery-item travel">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvKLq5YwmssLLOLjmtvkUY43x_wzOwrDBhmLuWWNKB4Q&s=10" alt="Travel 1">
+                <div class="overlay">Travel 1</div>
+            </div>
+            <div class="gallery-item travel">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZTKpBYXQfpOcWytKrwm-To58YSJ-4CDhv9B3VuX2AeQ&s=10" alt="Travel 2">
+                <div class="overlay">Travel 2</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
